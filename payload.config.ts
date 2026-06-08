@@ -61,10 +61,10 @@ export default buildConfig({
       auth: true,
       admin: { useAsTitle: 'email', group: 'Admin' },
       access: {
-        create: isAdmin,
-        read: isAdmin,
-        update: isAdmin,
-        delete: isAdmin,
+        create: isPublic,
+        read: isPublic,
+        update: isPublic,
+        delete: isPublic,
       },
       fields: [
         { name: 'name', type: 'text', label: 'Full Name' },
